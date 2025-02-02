@@ -1,5 +1,6 @@
 # ckpt_path=/home/wyzhang/ckpt/Llama3.1-8B
-ckpt_path=/home/wyzhang/ckpt/Meta-Llama-3.1-8B-Instruct/original
+# ckpt_path=/home/wyzhang/ckpt/Meta-Llama-3.1-8B-Instruct/original
+ckpt_path=/home/wyzhang/ckpt/DeepSeek-R1-Distill-Llama-8B-llama
 /home/wyzhang/.local/bin/torchrun --nproc_per_node 1 example_chat_completion.py \
     --ckpt_dir ${ckpt_path?} \
     --max_seq_len 128  \
